@@ -18,6 +18,7 @@ This repository contains a server-client interactive music quiz.
    java -jar music-quiz-server.jar
 
 
-5.Once the server starts, open your browser and go to:
-	  ```bash
+5. Once the server starts, open your browser and go to:
+
+   ```bash
    http://localhost:8080/start
