@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html translate="no">
+<head>
+    <title>Auswertung</title>
+    <link rel="stylesheet" type="text/css" href="styles/auswertung.css">
+</head>
+<body>
+  <div class="container">
+    <div class="column collapsible" id="classes" >
+      <h2>Klassen</h2>
+      <select id="classDropdown">
+      </select>
+      <div id="studentList">
+        <!-- Hier wird die Liste der Schüler angezeigt -->
+      </div>
+    </div>
+    <div class="column collapsible" id="buttons">
+      <h2>Optionen</h2>
+      <div id="button-container">
+        <button id="showPosts">Einsicht Posten</button>
+        <button id="showResults">Resultate</button>
+        <button id="showAnalysis">Auswertung</button>
+      </div>
+    </div>
+    <div class="column" id="content">
+      <div id="postContent">
+        <!-- Hier wird der Inhalt für "Einsicht Posten" angezeigt -->
+        <div class = "container" id = "einsicht">
+          <div class = "column">
+            <h2>Posten</h2>
+            <div id="levelList">
+              <!-- Hier wird die Liste der Postem angezeigt -->
+            </div>
+          </div>
+          <div class = "column" id = "posten-content">
+            <div class="iframe-container">
+              <iframe id="iframe-container" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="resultsContent">
+        <!-- Hier wird der Inhalt für "Resultate" angezeigt -->
+          <div class = "column">
+            <h2>Resultate</h2>
+            <div id="resultsList">
+              <!-- Hier wird die Liste der Postem angezeigt -->
+              <div class = "backy" id="P1">
+              <img src = "images/Resultate P1.png" class = "im" draggable="false">
+              </div>
+              <div class = "backy" id = "P2">
+                <img src = "images/Resultate P2.png" class = "im" draggable="false">
+              </div>
+              <div class = "backy" id = "P3">
+                <img src = "images/Resultate P3.png" class = "im" draggable="false">
+              </div>
+
+              
+            </div>
+          </div>
+      </div>
+      <div id="analysisContent">
+        <!-- Hier wird der Inhalt für "Auswertung" angezeigt -->
+        <div class = "column">
+          <h2>Auswertung</h2>
+          <div id="analysisList">
+            <div  class="backy" id = "au-wrap">
+            <img src = "images/Auswertung.png" class = "im" draggable= "false">
+
+            
+            </div>
+            <!-- Hier wird die Liste der Postem angezeigt -->
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div id = "toggle-button">
+  </div>
+  <button id = "toggler">Navigation</button>
+  <img src="images/delete.png" id="delete-image" alt="Your Image">
+  <div class="modal">
+    <div class="modal-content">
+        <p>Willst du das Profil wirklich löschen?</p>
+        <div class="button-container">
+            <button id="yesButton" class="modal-button">Ja</button>
+            <button id="noButton" class="modal-button">Nein</button>
+        </div>
+    </div>
+</div>
+  <script src="scripts/auswertung.js" type="text/javascript"></script>
+
+</body>
+</html>

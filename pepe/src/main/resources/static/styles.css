@@ -1,0 +1,11 @@
+
+#toggleButton {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+#toggleButton:hover {
+    color: darkblue; /* Change color on hover */
+}

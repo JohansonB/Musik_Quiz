@@ -1,0 +1,237 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Onest', sans-serif;
+}
+
+#toggler{
+    position: absolute;
+    top : 0;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#toggler:hover {
+    background-color: black;
+    color: white;
+}
+#toggle-button {
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: calc(100% - 30px);
+    border-radius: 100% 0 0 0;
+    background-color: #0074d9;
+    transform: rotate(270deg);
+}
+.hover-underline {
+    text-decoration: none;
+}
+
+
+/* Add a hover effect to underline the text */
+.hover-underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Match the iframe width */
+    height: 100%; /* Match the iframe height */
+    pointer-events: auto; /* Ensures the overlay captures clicks */
+    background-color: transparent; /* Transparent background */
+    display: block; /* Initially visible */
+  }
+.im{
+    width: 100%;
+}
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#postContent{
+    height: 100%;
+}
+#posten-content{
+    flex:2;
+}
+#classes {
+    display: block;
+    overflow-y: auto; /* Fügt eine vertikale Scrollleiste hinzu, wenn der Inhalt die Höhe überschreitet */
+    max-height: 100%; /* Begrenzt die maximale Höhe auf die Bildschirmhöhe */
+    background-color: #2ca3cb;
+    width: 17%;
+}
+
+#classDropdown {
+    margin-top: 10px;
+}
+
+#buttons {
+    display: block;
+    background-color: #47b1b8;
+    width: 20%;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 5%;
+}
+
+/* Styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+
+/* Styles for buttons */
+.modal-button {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #0074d9;
+    color: #fff;
+}
+
+.modal-button:focus {
+    outline: none;
+}
+
+/* Show the modal */
+.modal.active {
+    display: flex;
+}
+
+#delete-image {
+    visibility: hidden; /* Hide the image by default */
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    padding-left: 20px;
+    /* Add any styles for positioning and appearance */
+}
+
+.list_term{
+    display: flex; /* Show the image when it comes after a selected paragraph */
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-left: 10px; /* Example margin to position it next to the selected paragraph */
+    justify-content: space-between; /* Positions items at the beginning and end of the container */
+    align-items: center;
+    margin-bottom: 15px;
+}
+.selected{
+    background-color: white;
+   	border-radius: 6px;
+    padding-left: 17px;
+    font-weight: bold;
+	transition: padding-left 0.5s;
+}
+
+#button-container button {
+    margin-top: 10px;
+    padding: 25px;
+    border-radius: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#button-container button:hover {
+    background-color: #dfe2e2;
+}
+
+.bold-x {
+    font-family: 'Onest';
+    font-weight: bold;
+    pointer-events: none;
+  }
+
+.backy{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#content {
+    background-color: #65b8af;
+    flex: 2;
+}
+
+.column {
+    /* flex: 1; */
+    padding: 20px;
+    border: 1px solid #ccc;
+
+    overflow-y: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#content > div {
+    display: none;
+}
+
+h2 {
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

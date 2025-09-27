@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P3 Level 3</title>
+    <link rel="stylesheet" type="text/css" href="styles/posten3level3.css">
+</head>
+<body id = "posten3level3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<div id = main-container>
+    <div id="piano-container">
+        <p class="exercise-title">Symbol</p>
+        <p id = "desc-text">Bestimme die Länge des<br>gezeigten Symbols anhand<br>des Kreisdiagrammes.</p>
+    </div>
+
+    <div id = "examples-container">
+        <div id="first-row">
+                <div class = "answer-box" id = "a">
+                    <img class = "note-image" src = "images/AchtelNote.png" alt = "note" draggable="false">
+                    <canvas class="cake-container" width="200" height="200"></canvas>
+                </div>
+
+                <div class = "answer-box" id = "b">
+                    <img class = "note-image" src = "images/HalbeNotePunkt.png" alt = "note" draggable="false">
+                    <canvas class="cake-container" width="200" height="200"></canvas>
+                </div>
+
+                <div class = "answer-box" id = "c">
+                    <img class = "note-image" src = "images/HalbePause.png" alt = "note" draggable="false">
+                    <canvas class="cake-container" width="200" height="200"></canvas>
+                </div>
+        </div>
+
+        <div id="second-row">
+                <div class = "answer-box" id = "d">
+                    <img class = "note-image" src = "images/ViertelNote.png" alt = "note" draggable="false">
+                    <canvas class="cake-container" width="200" height="200"></canvas>
+                </div>
+
+                <div class = "answer-box" id = "e">
+                    <img class = "note-image" src = "images/ViertelPausePunkt.png" alt = "note" draggable="false">
+                    <canvas class="cake-container" width="200" height="200"></canvas>
+                </div>
+
+                <div class = "answer-box" id = "f">
+                    <img class = "note-image" id="ganzenote" src = "images/GanzeNote.png" alt = "note" draggable="false">
+                    <canvas class="cake-container" width="200" height="200"></canvas>
+                </div>
+        </div>
+    </div>
+</div>
+<button id="help-button">hilfe</button>
+<div id="popup-container">
+    <div id="popup-content">
+        <p class="popup-text">Zeige wie viel Platz eine Note in einem 4/4-Takt einnehmen würde anhand des Kreisdiagrammes.</p>
+        <div id="help-container-1">
+            <p class="popup-text">Klicke auf das leere Feld, um einen Teil zu schwärzen.</p>
+            <img id="help-image" src="images/P3L3help.png" alt="hilfe" draggable="false">
+        </div>
+        <button id="close-button">Schließen</button>
+    </div>
+</div>
+<audio id="pianoSound">
+    <source src="audio/HB.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script src="scripts/posten3level3.js" type="text/javascript"></script>
+</body>
+</html>

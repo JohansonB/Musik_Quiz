@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2 Level 2b</title>
+    <link rel="stylesheet" type="text/css" href="styles/posten2level2.css">
+</head>
+<body id = "posten2level2b">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <div id = "main-container">
+        <div id="piano-container">
+            <p class="exercise-title">Rhythmus</p>
+            <p id="desc-text">Übertrage das Notenbild in das <strong>8er</strong> Raster, indem du die Kästchen anklickst.</p>
+        </div>
+        <div id="aufgabe-container">
+            <div id="aufgabe-vertikal">
+                <div id="notenbild">
+                    <svg width="900" height="96">
+                        <line x1="0" x2="900" y1="66" y2="66" style="stroke-width: 1; stroke:#000"></line>
+                        <text id="keyElement" fill="#000" x="9.6" y="78" style="font-family: 'Helsinki Std'; font-size: 50.4px;">/</text>
+                        <text fill="#000" x="41.4" y="52.8" style="font-family:'Helsinki Std'; font-size: 50.4px;">4</text>
+                        <text fill="#000" x="41.4" y="79.2" style="font-family: 'Helsinki Std'; font-size: 50.4px;">4</text>
+                        
+                        <!--Erster Takt-->
+                        <text fill="#000" x="94.8" y="72.6" style="font-family: 'Helsinki Std'; font-size: 50.4px;" class="normal">q</text>
+                        <text fill="#000" x="135.8" y="72.6" style="font-family: 'Helsinki Std'; font-size: 50.4px;" class="normal">q</text>
+                        <text fill="#000" x="188.8" y="64.6" style="font-family: 'Helsinki Std'; font-size: 50.4px;" class="normal">Œ</text>
+                        <text fill="#000" x="280.8" y="72.6" style="font-family:'Helsinki Std'; font-size: 50.4px;" class="normal">q</text>
+                        <text fill="#000" x="324.8" y="72.6" style="font-family: 'Helsinki Std'; font-size: 50.4px;" class="normal">q</text>
+                        <text fill="#000" x="373.8" y="72.6" style="font-family:'Helsinki Std'; font-size: 50.4px;" class="normal">q</text>
+                        <text fill="#000" x="416.8" y="66.6" style="font-family:'Helsinki Std'; font-size: 50.4px;" class="normal">‰</text>
+                    
+                        <!--Notenbalken erster Takt-->
+                        <line x1="109.2" y1="23.1" x2="151.2" y2="23.1" style="stroke: #000; stroke-width: 6"></line>
+                        <line x1="295.2" y1="23.1" x2="389.2" y2="23.1" style="stroke: #000; stroke-width: 6"></line>
+                        
+                        <!--Taktlinien -->
+                        <line x1="475.8" x2="475.8" y1="39.4" y2="92.6" style="stroke-width: 1.5; stroke:#000"></line>
+                        <line x1="890" x2="890" y1="53.4" y2="78.6" style="stroke-width: 1.2; stroke:#000"></line>
+                        <line x1="897.2" x2="897.2" y1="53.4" y2="78.6" style="stroke-width: 8.4; stroke: #000"></line>
+                    
+                        <!--Zweiter Takt-->
+                        <text fill="#000" x="518.8" y="72.6" style="font-family: 'Helsinki Std'; font-size: 50.4px;" class="normal">q</text>
+                        <text fill="#000" x="612.8" y="72.6" style="font-family: 'Helsinki Std'; font-size: 50.4px;" class="normal">e</text>
+                        <text fill="#000" x="653.8" y="66.6" style="font-family: 'Helsinki Std'; font-size: 50.4px;" class="normal">‰</text>
+                        <text fill="#000" x="708.8" y="72.6" style="font-family: 'Helsinki Std'; font-size: 50.4px;" class="normal">q</text>
+                        <text fill="#000" x="749.8" y="72.6" style="font-family: 'Helsinki Std'; font-size: 50.4px;" class="normal">q</text>
+                        <text fill="#000" x="800.8" y="72.6" style="font-family: 'Helsinki Std'; font-size: 50.4px;" class="normal">q</text>
+                        <text fill="#000" x="843.8" y="72.6" style="font-family: 'Helsinki Std'; font-size: 50.4px;" class="normal">q</text>
+                    
+                        <!--Notenbalken zweiter Takt-->
+                        <line x1="723.2" y1="23.1" x2="859.2" y2="23.1" style="stroke: #000; stroke-width: 6"></line>
+                    
+                    </svg>
+                </div>
+                
+                <div id = "row-container">
+                    <!--<img id = "takt-image" src = "images/takt_example.png" alt = "Takt Bild"></img>-->
+                    <div id = "row-1" class = "number-row">
+                       <!-- <div id = "text1" class ="text-box">Takt1</div> -->
+                            <div class="number-pack" id="1">
+                                <div id = "nb1" class = "number-box">1</div>
+                                <div id = "nb2" class = "number-box">2</div>
+                            </div>
+                            <div class="number-pack" id="2">
+                                <div id = "nb3" class = "number-box">3</div>
+                                <div id = "nb4" class = "number-box">4</div>
+                            </div>
+                            <div class="number-pack" id="3">
+                                <div id = "nb5" class = "number-box">5</div>
+                                <div id = "nb6" class = "number-box">6</div>
+                            </div>
+                            <div class="number-pack" id="4">
+                                <div id = "nb7" class = "number-box">7</div>
+                                <div id = "nb8" class = "number-box">8</div>
+                            </div>
+                    </div>
+                    <div id = "row-2" class = "number-row">
+                        <!-- <div id = "text2" class ="text-box">Takt2</div> -->
+                            <div class="number-pack" id="5">
+                                <div id = "nb9" class = "number-box">1</div>
+                                <div id = "nb10" class = "number-box">2</div>
+                            </div>
+                            <div class="number-pack" id="6">
+                                <div id = "nb11" class = "number-box">3</div>
+                                <div id = "nb12" class = "number-box">4</div>
+                            </div>
+                            <div class="number-pack" id="7">
+                                <div id = "nb13" class = "number-box">5</div>
+                                <div id = "nb14" class = "number-box">6</div>
+                            </div>    
+                            <div class="number-pack" id="8">
+                                <div id = "nb15" class = "number-box">7</div>
+                                <div id = "nb16" class = "number-box">8</div>
+                            </div>
+                    </div>
+                </div>    
+            </div>
+</div>
+<button id="help-button">hilfe</button>
+<div id="popup-container">
+    <div id="popup-content">
+        <p class="popup-text" id="a"><strong>Ziel:</strong> 
+            <ol>
+                <li>Jedes Feld ankreuzen, bei dem eine <strong>neue</strong> Note beginnt.</li>
+                <li>Pausen auslassen.</li>
+            </ol>
+        </p>
+        <p class="popup-text" id="b"><strong>Wie?</strong>
+            <div class="popup-beschreibung">
+                <p id="beschreibung-text-1">
+                Du siehst zwei Raster mit jeweils 8 Feldern.<br>Jedes der 8 Felder repräsentiert die Länge einer Achtelnote.
+                </p>
+                <p id="beschreibung-text-2">
+                1 Achtelnote = 1 Feld<br>
+                1 Viertelnote = 2 Felder
+                </p>
+            </div>
+        </p>
+        <p class="popup-text" id="c">
+            Kreuze nun <strong>jedes</strong> Feld an, bei dem eine <strong>neue</strong> Note beginnt (oder klingen würde). Lass aber die Pausen aus, denn diese klingen ja nicht.
+        </p>
+
+        <div id="recap-container">
+            <div id="recap">
+                <img id="beispiel-image" src="images/beispielP2L2.png" alt="beispielP2L2" draggable="false">
+                <p id="recap-text">Du siehst: jede Note, die man spielen würde, muss angekreuzt werden und die Pausen werden ausgelassen. </p>
+            </div>
+        </div>
+        <button id="close-button">Schließen</button>
+    </div>
+</div></div>
+<script src="scripts/posten2level2.js" type="text/javascript"></script>
+
+</body>
+</html>
+

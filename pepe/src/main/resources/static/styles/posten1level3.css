@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'Helsinki Std';
+  src: url("../fonts/HelsinkiStd.otf") format("opentype");
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Onest', sans-serif;
+  background-color: rgba(44,163,203,255)
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#piano-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 200px;
+  margin: 3% 0 0 5%;
+  box-sizing: border-box;
+  transform-origin: top left;
+}
+
+.exercise-title {
+  position: absolute;
+  left: 8%;  
+  top: 15%;
+  font-size: 36px;
+  margin-bottom: 10px;
+  /* font-weight: bold; */
+}
+
+#desc-text{
+  position: absolute;
+  top: 26%;
+  left: 8%;
+  font-size: 22px;
+}
+
+#image-container {
+    transform: scale(0.75);
+    margin-top: -5%;
+    margin-left: 10px;
+    display: inline-flex; /* Make the container adapt its width to the widest element */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between images */
+}
+
+#keyboard-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#record-container{
+    background-color: #abdaea;
+    border: 0.5px solid black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    user-select: none;
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Microsoft Edge */
+}
+
+#record {
+    cursor: pointer;
+    height: 64px;
+}
+
+#stop {
+    cursor: pointer;
+}
+
+#besch-text{
+    font-size: 22px;
+}
+
+.dot{
+    content: "";
+    width: 8px; /* Adjust these values to change the size */
+    height: 8px; /* Adjust these values to change the size */
+    background-color: green; /* Adjust the color as needed */
+    border-radius: 50%; /* Make it a circle (use 0% to get a full oval) */
+}
+
+#keyboard-image-wrapper{
+    position: relative;
+}
+
+#help-button {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    padding: 5px 14px;
+    /* margin-bottom: 20px; */
+    background-color: #00000000;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 27px;
+    transition: padding 0.5s, background-color 0.5s;
+    /* transition: background-color 0.5s; */
+}
+
+#help-button:hover {
+    padding: 9px 18px;
+    background-color: rgb(76, 196, 236);
+    border-color: #000000; /* Randfarbe ändern, wenn der Mauszeiger über dem Button ist */
+    color: #000000;
+}
+        
+#popup-container {
+    display: none; /* Das Pop-up wird standardmäßig ausgeblendet */
+    position: fixed;
+    width: 640px;
+    top: 50%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #000;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#popup-content {
+    text-align: center;
+}
+
+.popup-text {
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#close-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#keyboard{
+    cursor: pointer;
+    width: 840px;
+    height: 374px;
+}
+
+#place-holder{
+    margin-left: 15px;
+    width: 184px;
+    height: 64px;
+}
+
+#number-attempts{
+    margin-top: 30px;
+    margin-left: 380px;
+    font-size: 35px;
+    user-select: none;
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Microsoft Edge */
+}
+
+.answer-container {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #f0f0f0;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.answer-image {
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+.answer-description {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold; /* Make the text bold */
+    font-size: 18px; /* Increase the font size */
+}
+
+#notenbild {
+    font-family: 'Helsinki Std', sans-serif;
+}
+
+#noten-container {
+    position: absolute;
+    left: 27%;
+    top: 7%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 850px;
+    height: 350px;
+    user-select: none;
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Microsoft Edge */
+}
+
+p {
+    margin: 0;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+img {
+    cursor: default;
+    height: 64px;
+}

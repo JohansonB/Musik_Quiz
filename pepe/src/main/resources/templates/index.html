@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html translate="no">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+<body>
+<div id="main-container">
+    <p id="greeting-text"><strong>Willkommen zu staobe.ch</strong></p>
+    <!-- Add a div for displaying error messages -->
+    <p id="errorMessage"></p>
+
+    <form id="loginForm">
+        <div id="login-container">
+            <div id="username-container">
+                <label id="username-label" for="username">Name:</label>
+                <input type="text" id="username" name="username" required>
+
+            </div>
+            <div id="password-container">
+                <label id="password-label" for="password">Passwort:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div id="class-container" style="visibility: hidden;">
+                <label id="class-label" for="class">Klasse:</label>
+                <select id="class" name="class">
+                    <option value="7c">7c</option>
+                    <option value="7b">7b</option>
+                    <option value="Test">test</option>
+                </select>
+            </div>
+        </div>
+        <div id="button-container">
+            <button type="button" id="loginButton">Login</button>
+        </div>
+
+    </form>
+    <p id="toggleButton">Noch nicht registriert?</p>
+</div>
+
+
+<script src="scripts/index.js" type="text/javascript"></script>
+</body>
+</html>

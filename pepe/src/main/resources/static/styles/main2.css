@@ -1,0 +1,128 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Onest', sans-serif;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    background-color: #15586e;
+}
+
+#popup-container {
+    display: none; /* Das Pop-up wird standardmäßig ausgeblendet */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #000;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#popup-content {
+    text-align: center;
+}
+
+.popup-text {
+    line-height: 1.2;
+    width: 250px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#buttons-cont {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#NEIN-button {
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+#JA-button {
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+#count {
+    margin-right: 10px;
+}
+
+#iframe-container {
+    flex: 1; /* Make the iframe take up available vertical space */
+    width: 100%;
+}
+
+#commit-button {
+    margin-top: 5px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.commit-img {
+    height: 43px;
+    transform: rotateY(180deg);
+    opacity: 0;
+    transition: opacity 0.5s;
+    margin-right: 10px;
+}
+
+#commit-button:hover + .commit-img {
+    opacity: 1;
+}
+
+#commit-button:hover {
+    background-color: white;
+    color: black;
+}
+
+#commit-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: #2aa3cb;
+}
+
+#iframe-container {
+    flex: 1;
+    width: 100%;
+}
+
+#commit-button {
+    height: 50px;
+    font-weight: bold;
+    font-size: 24px;
+    align-self: end;
+    margin-bottom: 30px;
+} */

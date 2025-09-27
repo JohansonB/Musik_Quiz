@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html translate="no">
+<head>
+    <title>P2 Level 4c</title>
+    <link rel="stylesheet" type="text/css" href="styles/posten2level4.css">
+</head>
+<body id = "posten2level4c">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <div id="main-container">
+        <div id="piano-container">
+            <p class="exercise-title">Rhythmus</p>
+            <p id = "desc-text">Fülle den 4/4-Takt mit dem Editor aus und befolge die Anweisungen links der Toolbox.</p>
+        </div>
+
+        <div id = "right-container">
+            <div id="notenlinie">
+                <svg width="670" height="136" id = "pad-image">
+                    <g transform="scale(1.1)">
+                <line x1="0" x2="600" y1="66" y2="66" style="stroke-width: 1; stroke:#000"></line>
+                <text id="keyElement" fill="#000" x="9.6" y="78" style="font-family: 'Helsinki Std'; font-size: 50.4px;">/</text>
+                <text fill="#000" x="41.4" y="52.8" style="font-family:'Helsinki Std'; font-size: 50.4px;">4</text>
+                <text fill="#000" x="41.4" y="79.2" style="font-family: 'Helsinki Std'; font-size: 50.4px;">4</text>
+                <line x1="592.8" x2="592.8" y1="53.4" y2="78.6" style="stroke-width: 1.2; stroke:#000"></line>
+                <line x1="600" x2="600" y1="53.4" y2="78.6" style="stroke-width: 8.4; stroke: #000"></line>
+                    </g>
+                </svg>
+            </div>
+            <div id = "note-container">
+                <p id = "note-text"><strong>Anweisung:</strong><br>Verwende mindestens <br>1 halbe Pause, <br>1 punktierte Achtelnote.</p>                
+                <div id = "toolbox">
+                    <div id="rows">
+                        <div id = "tool-row1">
+                            <div class = "image-box" id = "GanzeNote" index = "0">
+                                <img src = "images/GanzeNote.png" alt = "ganze Note" draggable="false">
+                            </div>
+                            <div class = "image-box" id = "HalbeNote" index = "1">
+                                <img src = "images/HalbeNote.png" alt = "halbe Note" draggable="false">
+                            </div>
+                            <div class = "image-box" id = "ViertelNote" index = "2">
+                                <img src = "images/ViertelNote.png" alt = "achtel Note" draggable="false">
+                            </div>
+                            <div class = "image-box" id = "AchtelNote" index = "2">
+                                <img src = "images/AchtelNote.png" alt = "achtel Note" draggable="false">
+                            </div>
+                            <div class = "image-box" id = "SechzehntelNote" index = "3">
+                                <img src = "images/SechzehntelNote.png" alt = "sechzehntel Note" draggable="false">
+                            </div>
+                            <div class = "image-box" id = "punkt" index = "4">
+                                <img src = "images/punkt.png" alt = "punkt" draggable="false">
+                            </div>
+                        </div>
+                        <div id = "tool-row2">
+                            <div class = "image-box" id = "GanzePause" index = "5">
+                                <img src = "images/GanzePause.png" alt = "ganze Pause" draggable="false">
+                            </div>
+                            <div class = "image-box" id = "HalbePause" index = "6">
+                                <img src = "images/HalbePause.png" alt = "halbe Pause" draggable="false">
+                            </div>
+                            <div class = "image-box" id = "ViertelPause" index = "7">
+                                <img src = "images/ViertelPause.png" alt = "achtel Pause" draggable="false">
+                            </div>
+                            <div class = "image-box" id = "AchtelPause" index = "7">
+                                <img src = "images/AchtelPause.png" alt = "achtel Pause" draggable="false">
+                            </div>
+                            <div class = "image-box" id = "SechzehntelPause" index = "8">
+                                <img src = "images/SechzehntelPause.png" alt = "sechzehntel Pause" draggable="false">
+                            </div>
+                            <div class = "image-box" id = "transparent" index = "9">
+                                <!--<img src = "images/transparent.png" alt = "nothing here">-->
+                                <p> Löschen </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="tool-text">T<br>O<br>O<br>L<br>B<br>O<br>X</p>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <button id="help-button">hilfe</button>
+    <div id="popup-container">
+        <p class="popup-text" id="a"><strong>Ziel:</strong> 
+            <ol>
+                <li>4/4-Takt ausfüllen.</li>
+                <li>Anweisungen befolgen.</li>
+            </ol>
+        </p>
+        <p class="popup-text" id="b">Du siehst einen 4/4 Takt und eine Box mit mehreren Noten und deren Pausen.</p>
+        <p class="popup-text" id="c">Oberhalb des Taktes stehen Anweisungen, die du erfüllen musst, damit die Aufgabe als richtig gilt.</p>
+        <!-- <img src="images/example.png" alt="Bildbeschreibung"> -->
+            <button id="close-button">Schließen</button>
+        </div>
+    </div>
+
+
+
+    <script src="scripts/posten2level4.js" type="text/javascript">
+
+    
+    </script>
+</body>
+</html>

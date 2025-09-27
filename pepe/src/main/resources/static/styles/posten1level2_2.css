@@ -1,0 +1,247 @@
+@font-face {
+  font-family: 'Helsinki Std';
+  src: url("../fonts/HelsinkiStd.otf") format("opentype");
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Onest', sans-serif;
+  background-color: rgba(44,163,203,255)
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#piano-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 200px;
+  margin: 3% 0 0 5%;
+  box-sizing: border-box;
+  transform-origin: top left;
+}
+
+.exercise-title {
+  position: absolute;
+  left: 8%;  
+  top: 15%;
+  font-size: 36px;
+  margin-bottom: 10px;
+  /* font-weight: bold; */
+}
+
+#desc-text{
+  position: absolute;
+  top: 26%;
+  left: 8%;
+  font-size: 22px;
+}
+
+.selected {
+    box-shadow: 0 0 0 2px green; /* Green border for selected item */
+}
+
+.place-holder {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+       
+.drop-text {
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+.drag-text {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#drag-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 1%;
+    right: 16%;
+    background-color: #2893b7;
+    border-radius: 20px;
+}
+
+.uber-container {
+    width: 440px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom:  10px;
+}
+
+.equals {
+    font-weight: bold; /* Make the text bold */
+    font-size: 24px; /* Increase the font size */
+    margin-right: 10px; /* Add some space to the right of the equals sign */
+    padding-left: 20px;
+    user-select: none;
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Microsoft Edge */
+}
+
+#image-container {
+    position: absolute;
+    top: 4%;
+    left: 32%;
+    display: inline-flex; /* Make the container adapt its width to the widest element */
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between; /* Distribute space between images */
+    /* margin: 0% 0 15% 20%; */
+}
+
+#sound-container {
+    display: inline-flex; /* Make the container adapt its width to the widest element */
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; Distribute space between images */
+    /* margin: 4% 0 15% 5%; */
+    height: 460px;
+    /* border: 1px dotted black; */
+    padding: 10px;
+}
+
+#help-button {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    padding: 5px 14px;
+    /* margin-bottom: 20px; */
+    background-color: #00000000;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 27px;
+    transition: padding 0.5s, background-color 0.5s;
+    /* transition: background-color 0.5s; */
+}
+
+#help-button:hover {
+    padding: 9px 18px;
+    background-color: rgb(76, 196, 236);
+    border-color: #000000; /* Randfarbe ändern, wenn der Mauszeiger über dem Button ist */
+    color: #000000;
+}
+
+/* CSS für das Pop-up-Fenster */
+#popup-container {
+    display: none; /* Das Pop-up wird standardmäßig ausgeblendet */
+    position: fixed;
+    top: 33%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #000;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#popup-content {
+    text-align: center;
+}
+
+#popup-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#close-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.answer-container {
+    width: 160px;
+    height: 80px;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    background-color: #abdaea;
+    display: flex;
+    /* vertical-align: middle; */
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Microsoft Edge */
+}
+
+.answer-container:hover {
+    background-color: #a7d2e1;
+}
+
+.answer-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; /* Make the text bold */
+    font-size: 23px; /* Increase the font size */
+    /* border: 1px solid black; */
+    border-radius: 25px;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    background-color: #d3f4ff;
+}
+
+.noten-container {
+    width: 200px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 3px;
+    background-color: #abdaea;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    user-select: none;
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Microsoft Edge */
+}
+
+#noten {
+    font-family: 'Helsinki Std', sans-serif;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.answer-image {
+    margin-left: 20px;
+    vertical-align: middle;
+    width: 100px;
+}
+
+p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+img {
+    cursor: pointer;
+}

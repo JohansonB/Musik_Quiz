@@ -1,0 +1,264 @@
+@font-face {
+  font-family: 'Helsinki Std';
+  src: url("../fonts/HelsinkiStd.otf") format("opentype");
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Onest', sans-serif;
+  background-color: rgba(44,163,203,255)
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#piano-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 200px;
+  margin: 3% 0 0 5%;
+  box-sizing: border-box;
+  transform-origin: top left;
+}
+
+.exercise-title {
+  position: absolute;
+  left: 8%;  
+  top: 15%;
+  font-size: 36px;
+  margin-bottom: 10px;
+  /* font-weight: bold; */
+}
+
+#desc-text{
+  position: absolute;
+  top: 26%;
+  left: 8%;
+  font-size: 22px;
+}
+        
+#aufgabe-container {   
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    display: flex;
+    align-items: center; /* Vertikal zentrieren */
+}
+
+.number-box {
+    cursor: pointer;
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Adjust the font size as needed */
+    position: relative; /* Positionierung für Pseudo-Elemente */
+    background-color: #63caed;
+}
+
+.number-box:hover {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Adjust the font size as needed */
+    position: relative; /* Positionierung für Pseudo-Elemente */
+    background-color: #c6e3ed;
+}
+
+
+.number-pack {
+    display: flex;
+    margin-right: 10px;
+}
+    
+.number-row{
+    display: flex;
+    flex-direction: row;
+}
+
+#notenbild {
+    font-family: 'Helsinki Std', sans-serif;
+    margin-top: auto;
+    margin-left: -80px;
+    user-select: none;
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Microsoft Edge */
+}
+
+.selected::before {
+    content: "";
+    position: absolute;
+    width: 144%;
+    height: 1px; /* Dicke des Kreuzes */
+    background-color: black; /* Farbe des Kreuzes */
+    top: 48%;
+    left: -22%;
+    transform: rotate(45deg);
+}
+
+/* Diagonale Linie von oben rechts nach unten links */
+.selected::after {
+    content: "";
+    position: absolute;
+    width: 144%;
+    height: 1px; /* Dicke der Linien */
+    background-color: black; /* Farbe der Linien */
+    top: 48%;
+    left: -22%;
+    transform: rotate(315deg);
+}
+
+.text-box {
+    width: 150px; /* Adjust the width as needed */
+    height: 75px; /* Adjust the height as needed */
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-left: 0px;
+    margin-right: 100px;
+}
+
+#row-container{
+    display: flex;
+    flex-direction: row;
+    margin: 9% 0 0% 0px;
+    user-select: none;
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Microsoft Edge */
+}
+
+#row-1 {
+    margin-right: 50px;
+}
+
+p {
+    margin: 0;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+#help-button {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    padding: 5px 14px;
+    /* margin-bottom: 20px; */
+    background-color: #00000000;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 27px;
+    transition: padding 0.5s, background-color 0.5s;
+    /* transition: background-color 0.5s; */
+}
+
+#help-button:hover {
+    padding: 9px 18px;
+    background-color: rgb(76, 196, 236);
+    border-color: #000000; /* Randfarbe ändern, wenn der Mauszeiger über dem Button ist */
+    color: #000000;
+}
+
+#popup-container {
+    display: block; /* Das Pop-up wird standardmäßig ausgeblendet */
+    position: fixed;
+    width: 640px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #000;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+ol {
+    list-style-type: disclosure-closed; /* Verwenden Sie "decimal" für arabische Zahlen */
+    padding-left: 20px; /* Einen Einzug hinzufügen, um die Liste einzurücken */
+}
+          
+ol li {
+    text-align: justify;
+    padding-left: 73px;
+}
+
+#popup-content {
+    text-align: center;
+}
+
+.popup-text {
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.popup-beschreibung {
+    display: flex;
+    flex-direction: row;
+}
+
+#beschreibung-text-1 {
+    text-align: left;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 479px;
+}
+
+#beschreibung-text-2 {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 13px;
+}
+
+#beispiel-image {
+    width: 500px;
+    height: auto;
+}
+
+#recap-text {
+    font-size: 12px;
+}
+
+#recap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#close-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#takt-image {
+    width: 1100px;
+    height: 180px;
+    margin: auto;
+}

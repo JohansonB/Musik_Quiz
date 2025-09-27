@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html translate="no">
+<head>
+    <title>P1 Level 1b Hörend</title>
+    <link rel="stylesheet" type="text/css" href="styles/posten1level1hoeren.css">
+    <style>
+    .answer-container:hover svg g path,
+    .answer-container:hover svg g line,
+    .answer-container:hover svg g text,
+    .answer-container.selected svg g path,
+    .answer-container.selected svg g line,
+    .answer-container.selected svg g text {
+        stroke: black;
+        fill: white;
+    }
+    .answer-container {
+        font-family: 'Onest', sans-serif;
+    }
+    </style>
+</head>
+<body id = "posten1level1hoeren_b">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <div id="main-container">
+        <div id="piano-container">
+            <p class="exercise-title">Tonhöhe</p>
+            <ol id="desc-text">
+                <li>Hör dir das Hörbeispiel an.</li>
+                <li>Klicke auf den Graphen, der<br>zum Hörbeispiel passt.</li>
+            </ol>
+            <img id="loudspeaker" src="images/loudspeaker.png" alt="Loudspeaker" draggable="false">
+            <p id="continue-text">Drücke nun auf <strong>Weiter</strong>!</p>
+        </div>
+
+        <div id="image-container">
+            <div class="answer-container" id = "a">
+                <p class="answer-description">a</p>
+             
+                <svg width="160" height="110">
+                    <g transform="scale(0.4)">
+                    <!-- X-Achse -->
+                    <line x1="50" y1="250" x2="350" y2="250" stroke="black" stroke-width="4"></line>
+                    <!-- Y-Achse -->
+                    <line x1="50" y1="50" x2="50" y2="250" stroke="black" stroke-width="4"></line>
+                    
+                    <!-- Y-Achse Beschriftung -->
+                    <text x="30" y="50" text-anchor="middle" font-size="20">hoch</text>
+                    <text x="30" y="250" text-anchor="middle" font-size="20">tief</text>
+                    
+                    <!-- Verbindende Linien -->
+                    <path d="M100 160 Q200 0 300 160" fill="none" stroke="white" stroke-width="4"></path>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="answer-container" id = "b">
+                <p class="answer-description">b</p>
+                <svg width="160" height="110">
+                    <g transform="scale(0.4)">
+
+                    <!-- X-Achse -->
+                    <line x1="50" y1="250" x2="350" y2="250" stroke="black" stroke-width="4"></line>
+                    <!-- Y-Achse -->
+                    <line x1="50" y1="50" x2="50" y2="250" stroke="black" stroke-width="4"></line>
+                    
+                    <!-- Y-Achse Beschriftung -->
+                    <text x="30" y="50" text-anchor="middle" font-size="20">hoch</text>
+                    <text x="30" y="250" text-anchor="middle" font-size="20">tief</text>
+                    
+                    <!-- Verbindende Linien -->
+                    <path d="M100 160 Q200 300 300 160" fill="none" stroke="white" stroke-width="4"></path>
+                    </g>
+                </svg>
+            </div>
+
+            <div class="answer-container" id = "c">
+                <p class="answer-description">c</p>
+                <svg width="160" height="110">
+                    <g transform="scale(0.4)">
+                    <!-- X-Achse -->
+                    <line x1="50" y1="250" x2="350" y2="250" stroke="black" stroke-width="4"></line>
+                    <!-- Y-Achse -->
+                    <line x1="50" y1="50" x2="50" y2="250" stroke="black" stroke-width="4"></line>
+                    <!-- Y-Achse Beschriftung -->
+                    <text x="30" y="50" text-anchor="middle" font-size="20">hoch</text>
+                    <text x="30" y="250" text-anchor="middle" font-size="20">tief</text>
+                    <!-- Verbindende Linien -->
+                    <path d="M100 160 Q200 160 300 160" fill="none" stroke="white" stroke-width="4"></path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <button id="help-button">hilfe</button>
+    <!-- Füge dieses <div> für das Popup in dein HTML-Dokument ein -->
+    <div id="popup-container">
+        <div id="popup-content">
+            <p class="popup-text">Du siehst 3 verschiedene Graphen. Die linke Achse beschreibt die Tonhöhe.</p>
+            <p class="popup-text">Klicke auf den Graphen, der mit dem Hörbeispiel übereinstimmt.</p>
+            <button id="close-button">Schliessen</button>
+        </div>
+    </div>
+
+    <audio id="pianoSound">
+        <source src="audio/P1L1b.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="scripts/posten1level1hoeren.js" type="text/javascript">
+
+    </script>
+</body>
+</html>

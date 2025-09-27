@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html translate="no">
+<head>
+    <title>P1 Level 1a Hörend</title>
+    <link rel="stylesheet" type="text/css" href="styles/posten1level1hoeren.css">
+    <style>
+    @font-face {
+        font-family: 'Helsinki Std';
+        src: url("../templates\ Kopie/fonts/HelsinkiStd.otf") format("opentype");
+    }
+
+    .answer-container.selected svg g path,
+    .answer-container.selected svg g line,
+    .answer-container.selected svg g text {
+        stroke: black;
+        fill: rgb(0, 0, 0);
+        font-family: 'Helsinki Std', sans-serif;
+    }
+    
+    .answer-description {
+        font-family: 'Onest', sans-serif;
+    }
+    </style>
+</head>
+<body id = "posten1level1hoeren_a">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <div id="main-container">
+        <div id="piano-container">
+            <p class="exercise-title">Tonhöhe</p>
+                <ol id="desc-text">
+                    <li>Hör dir das Hörbeispiel an.</li>
+                    <li>Klicke auf das Bild, das<br>zum Hörbeispiel passt.</li>
+                </ol>
+            <img id="loudspeaker" src="images/loudspeaker.png" alt="Loudspeaker" draggable="false">
+            <p id="continue-text">Drücke nun auf <strong>Weiter</strong>!</p>
+        </div>
+
+        <div id="image-container">
+            <div class="answer-container" id = "a">
+                <p class="answer-description">a</p>
+
+                <svg width="140" height="95">
+                <g transform="scale(0.5)">
+                <!-- Erste Linie -->
+                <line x1="0" y1="84" x2="275" y2="84" stroke="#000" stroke-width="2"></line>
+                <!-- Zweite Linie -->
+                <line x1="0" y1="105" x2="275" y2="105" stroke="#000" stroke-width="2"></line>
+                <!-- Dritte Linie -->
+                <line x1="0" y1="126" x2="275" y2="126" stroke="#000" stroke-width="2"></line>
+                <!-- Vierte Linie -->
+                <line x1="0" y1="147" x2="275" y2="147" stroke="#000" stroke-width="2"></line>
+                <!-- Fünfte Linie -->
+                <line x1="0" y1="168" x2="275" y2="168" stroke="#000" stroke-width="2"></line>
+        
+        
+                <!-- Erster Takt Noten -->
+                <text x="40" y="136.5" style="font-size: 84px; font-family: 'Helsinki Std';" class="normal">q</text>
+                <text x="118" y="115.5" style="font-size: 84px; font-family: 'Helsinki Std';" class="normal">q</text>
+                <text x="196" y="136.5" style="font-size: 84px; font-family: 'Helsinki Std';" class="normal">q</text>
+                </g>    
+                </svg>
+            </div>
+
+            <div class="answer-container" id = "b">
+                <p class="answer-description">b</p>
+                <svg width="140" height="95">
+                <g transform="scale(0.5)">
+                <!-- Erste Linie -->
+                <line x1="0" y1="84" x2="275" y2="84" stroke="#000" stroke-width="2"></line>
+                <!-- Zweite Linie -->
+                <line x1="0" y1="105" x2="275" y2="105" stroke="#000" stroke-width="2"></line>
+                <!-- Dritte Linie -->
+                <line x1="0" y1="126" x2="275" y2="126" stroke="#000" stroke-width="2"></line>
+                <!-- Vierte Linie -->
+                <line x1="0" y1="147" x2="275" y2="147" stroke="#000" stroke-width="2"></line>
+                <!-- Fünfte Linie -->
+                <line x1="0" y1="168" x2="275" y2="168" stroke="#000" stroke-width="2"></line>
+   
+
+                <!-- Erster Takt Noten -->
+                <text x="40" y="136.5" style="font-size: 84px; font-family: 'Helsinki Std';" class="normal">q</text>
+                <text x="118" y="157.5" style="font-size: 84px; font-family: 'Helsinki Std';" class="normal">q</text>
+                <text x="196" y="136.5" style="font-size: 84px; font-family: 'Helsinki Std';" class="normal">q</text>
+            </g>    
+            </svg>
+            </div>
+
+            <div class="answer-container" id = "c">
+                <p class="answer-description">c</p>
+                <svg width="140" height="95">
+                <g transform="scale(0.5)">
+                <!-- Erste Linie -->
+                <line x1="0" y1="84" x2="275" y2="84" stroke="#000" stroke-width="2"></line>
+                <!-- Zweite Linie -->
+                <line x1="0" y1="105" x2="275" y2="105" stroke="#000" stroke-width="2"></line>
+                <!-- Dritte Linie -->
+                <line x1="0" y1="126" x2="275" y2="126" stroke="#000" stroke-width="2"></line>
+                <!-- Vierte Linie -->
+                <line x1="0" y1="147" x2="275" y2="147" stroke="#000" stroke-width="2"></line>
+                <!-- Fünfte Linie -->
+                <line x1="0" y1="168" x2="275" y2="168" stroke="#000" stroke-width="2"></line>
+   
+
+                <!-- Erster Takt Noten -->
+                <text x="40" y="136.5" style="font-size: 84px; font-family: 'Helsinki Std';" class="normal">q</text>
+                <text x="118" y="136.5" style="font-size: 84px; font-family: 'Helsinki Std';" class="normal">q</text>
+                <text x="196" y="136.5" style="font-size: 84px; font-family: 'Helsinki Std';" class="normal">q</text>
+                </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+<button id="help-button">hilfe</button>
+<!-- Füge dieses <div> für das Popup in dein HTML-Dokument ein -->
+<div id="popup-container">
+    <div id="popup-content">
+        <p class="popup-text">Du siehst 3 Notenbilder, die sich immer nur bei ihrer mittleren Note unterscheide.</p>
+        <p class="popup-text">Höre dir das Hörbeispiel an und klicke auf das Notenbild, das mit dem Hörbeispiel zusammenpasst.</p>
+        <button id="close-button">Schliessen</button>
+    </div>
+</div>
+    
+
+    <audio id="pianoSound">
+        <source src="audio/P1L1a.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="scripts/posten1level1hoeren.js" type="text/javascript">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html translate="no">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/posten3level7.css">
+    <title>P3 Level 7</title>
+</head>
+<body id = "posten3level7b1h">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<div id="main-container">
+    <div id="piano-container">
+        <p class="exercise-title">Noten eintragen (Bassschlüssel)</p>
+        <p id = "desc-text">Trage die gefragte Note in das Notenbild ein. Benutze dafür deine Maus.</p>
+    </div>
+
+    <div id="image-container">
+        <div id="note-text">
+            <p id="note-container-text">Note</p>
+            <p id = "note-container">cis</p>
+</div>  
+                  <div id="noten">
+            <svg width="300" height="240" id = "pad-image">
+            <g transform="scale(1.2)">
+           <!-- Erste Linie -->
+            <line x1="0" y1="84" x2="200" y2="84" stroke="#000" stroke-width="2"></line>
+            <!-- Zweite Linie -->
+            <line x1="0" y1="105" x2="200" y2="105" stroke="#000" stroke-width="2"></line>
+            <!-- Dritte Linie -->
+            <line x1="0" y1="126" x2="200" y2="126" stroke="#000" stroke-width="2"></line>
+            <!-- Vierte Linie -->
+            <line x1="0" y1="147" x2="200" y2="147" stroke="#000" stroke-width="2"></line>
+            <!-- Fünfte Linie -->
+            <line x1="0" y1="168" x2="200" y2="168" stroke="#000" stroke-width="2"></line>
+            
+            <!-- Bassschlüssel -->
+            <text x="12.6" y="105" style="font-size: 84px; font-family: 'Helsinki Std'; fill: #000;">?</text>
+            </g>
+        </svg>
+
+        <div id = "tool-box">
+            <div class = "image-box selected" id = "normal" index = "0">
+                <img src = "images/ViertelNote.png  " alt = "" draggable="false">
+            </div>
+            <div class = "image-box" id = "hashtag" index = "1">
+                <img src = "images/Doppelkreuz.png" alt = "" draggable="false">
+            </div>
+            <div class = "image-box" id = "b" index = "2">
+                <img src = "images/flat.png" alt = "" draggable="false">
+            </div>
+        </div>
+
+                  </div>
+    </div>
+</div>
+<button id="help-button">hilfe</button>
+<div id="popup-container">
+    <div id="popup-content">
+        <p class="popup-text">Du musst den Buchstaben, der angezeigt wird, mit deiner Maus im Notenbild bei der richtigen Linie einfügen.</p>
+        <p class="popup-text"><strong>Achte auf den Notenschlüssel (Violinschlüssel oder Bassschlüssel)</strong></p>
+        <div id="beispiel-image-container">
+            <div id="beispiel-row-1">
+                <img id="beispiel-image-1" src="images/p3toolbox.png" alt="toolbox" draggable="false">
+                <p class="beispiel-text">Klicke auf eines der drei Zeichen, um das richtige Werkzeug zu benutzen.</p>
+            </div>
+            <div id="beispiel-row-2">
+                <img id="beispiel-image-2" src="images/Notenbildleerviolin.png" alt="notenbildleerviolin" draggable="false">
+                <p class="beispiel-text">Klicke dann auf die Linie oder den Zwischenraum, wo sich die Note befinden sollte.</p>
+            </div>
+        </div>
+        <button id="close-button">Schliessen</button>
+    </div>
+</div>
+<script src="scripts/posten3level7.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+@font-face {
+  font-family: 'Helsinki Std';
+  src: url("../fonts/HelsinkiStd.otf") format("opentype");
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Onest', sans-serif;
+  background-color: rgba(44,163,203,255)
+}
+.temp-point{
+    opacity: 50%;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#piano-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 200px;
+  margin: 3% 0 0 5%;
+  box-sizing: border-box;
+  transform-origin: top left;
+}
+
+.exercise-title {
+  position: absolute;
+  left: 8%;  
+  top: 15%;
+  font-size: 36px;
+  margin-bottom: 10px;
+  /* font-weight: bold; */
+}
+
+#desc-text{
+  position: absolute;
+  top: 26%;
+  left: 8%;
+  font-size: 22px;
+}
+
+.selected {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #a8d5e5;
+}
+
+#help-button {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    padding: 5px 14px;
+    /* margin-bottom: 20px; */
+    background-color: #00000000;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 27px;
+    transition: padding 0.5s, background-color 0.5s;
+    /* transition: background-color 0.5s; */
+}
+
+#help-button:hover {
+    padding: 9px 18px;
+    background-color: rgb(76, 196, 236);
+    border-color: #000000; /* Randfarbe ändern, wenn der Mauszeiger über dem Button ist */
+    color: #000000;
+}
+
+#popup-container {
+    display: none; /* Das Pop-up wird standardmäßig ausgeblendet */
+    width: 384px;
+    position: fixed;
+    top: 50%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #000;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#popup-content {
+    text-align: center;
+}
+
+.popup-text {
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+ol {
+    list-style-type: disclosure-closed; /* Verwenden Sie "decimal" für arabische Zahlen */
+    padding-left: 20px; /* Einen Einzug hinzufügen, um die Liste einzurücken */
+    padding-bottom: 20px;
+}
+          
+ol li {
+    text-align: justify;
+    padding-left: 73px;
+}
+
+#close-button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.GanzeNote, .GanzeNotePunkt{
+    width: 25px;
+    height: 25px;
+}
+
+.HalbeNote, .HalbeNotePunkt,.AchtelNote,.AchtelNotePunkt, .ViertelNote, .ViertelNotePunkt, .SechzehntelNote, .SechzehntelNotePunkt{
+    width: 60px;
+    height: 60px;
+}
+
+.GanzePause{
+    width: 25px;
+    height: 25px;
+}
+
+.GanzePausePunkt{
+    width: 50px;
+    height: 50px;
+}
+
+.HalbePause, .HalbePausePunkt{
+    width: 50px;
+    height: 50px;
+}
+
+.ViertelPause, .ViertelPausePunkt, .AchtelPause, .AchtelPausePunkt, .SechzehntelPause, .SechzehntelPausePunkt{
+    width: 40px;
+    height: 40px;
+}
+
+#note-container{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#right-container{
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Microsoft Edge */
+}
+
+#tool-row1, #tool-row2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#note-text{
+    font-size: 22px;
+    /* font-weight: bold; */
+    width: 365px;
+}
+
+#notenlinie {
+    position: relative;
+    font-family: 'Helsinki Std', sans-serif;
+    margin-left: 320px;
+}
+
+#exe-text{
+    font-size: 22px;
+}
+
+.temporal-dot{
+    content: "";
+    width: 24px; /* Adjust these values to change the size */
+    height: 18px; /* Adjust these values to change the size */
+    background-color: gray; /* Adjust the color as needed */
+    border-radius: 50%; /* Make it a circle (use 0% to get a full oval) */
+}
+
+#pad-image{
+    width: 660px;
+}
+
+p {
+    margin: 0;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px; /* Adjust the width as needed */
+    height: 75px; /* Adjust the height as needed */
+    /* border: 2px solid black; Border style */
+    overflow: hidden; /* Hide overflowing content */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.image-box:hover {
+    background-color: #a8d5e5;
+}
+
+.image-box img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the box */
+}
+
+#tool-text {
+    margin-top: 10px;
+    opacity: 40%;
+    font-weight:bold; 
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 9px;
+}
+
+#punkt {
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+#transparent {
+    border-right-width: 1px;
+    border-right-style: solid;
+}
+
+#toolbox {
+    display: flex;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

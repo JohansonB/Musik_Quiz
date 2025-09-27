@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="pepe:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3294ffd9-5554-4663-a334-6a36f437ddfa" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="pepe/invalid/Web" />
+    </ignored-facets>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2UDAGoUzCdKHUh4fEUZyu9cKiKN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/41766/Desktop/pepe/pepe/src/main/resources/static/images&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;926e27eecdbc7a18858b3798ba99bddd&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.pepe.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\41766\Desktop\pepe\pepe\src\main\resources\static\images" />
+      <recent name="C:\Users\41766\Desktop\pepe\pepe\src\main\resources\static\styles" />
+      <recent name="C:\Users\41766\Desktop\pepe\pepe\src\main\resources\templates\pages" />
+      <recent name="C:\Users\41766\Desktop\pepe\pepe\src\main\resources\static\scripts" />
+      <recent name="C:\Users\41766\Desktop\pepe\pepe\src\main\resources\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\41766\Desktop\pepe\pepe\src\main\resources\static\images" />
+      <recent name="C:\Users\41766\Desktop\pepe\pepe\src\main\java\com\example\pepe\model" />
+      <recent name="C:\Users\41766\Desktop\pepe\pepe\src\main\resources\static\styles" />
+      <recent name="C:\Users\41766\Desktop\pepe\pepe\src\main\resources\templates\pages" />
+      <recent name="C:\Users\41766\Desktop\pepe\pepe\src\main\resources\static\scripts" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.pepe" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PepeApplication">
+    <configuration name="User_Profile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.pepe.model.User_Profile" />
+      <module name="pepe" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pepe" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/../Stefano_sge/Backup/server/server/pepe.jar" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\41766\Desktop\pepe" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PepeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="pepe" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.pepe.PepeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.User_Profile" />
+      <item itemvalue="JAR Application.pepe" />
+      <item itemvalue="Spring Boot.PepeApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.User_Profile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3294ffd9-5554-4663-a334-6a36f437ddfa" name="Default Changelist" comment="" />
+      <created>1692463683696</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692463683696</updated>
+      <workItem from="1692463687918" duration="150000" />
+      <workItem from="1692463859122" duration="142000" />
+      <workItem from="1692464260507" duration="242000" />
+      <workItem from="1692464523258" duration="1635000" />
+      <workItem from="1692480574443" duration="118000" />
+      <workItem from="1692480707754" duration="386000" />
+      <workItem from="1692491810272" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pepe/src/main/java/com/example/pepe/model/User_Storage.java</url>
+          <line>247</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pepe/src/main/java/com/example/pepe/model/User_Profile.java</url>
+          <line>1108</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pepe/src/main/java/com/example/pepe/Controller/LoginController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="30" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="target" />
+      </configuration>
+      <configuration name="Application">
+        <watch expression="2" language="JAVA" />
+        <watch expression="r_s.modules.get(2).this$1" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

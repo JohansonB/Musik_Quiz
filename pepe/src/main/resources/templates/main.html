@@ -1,0 +1,140 @@
+<html>
+<head>
+    <title>Play Piano Sound</title>
+	<style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #top-container {
+            display: grid;
+            grid-template-columns: 10% 90%; /* Split the top container into a 10/90 ratio */
+            grid-gap: 10px; /* Add some spacing between the columns */
+            height: 85vh; /* Set main container height to 90% viewport height */
+        }
+        #main-container {
+            display: grid;
+            grid-template-rows: 1fr 1fr; /* Split the main container into two rows */
+            grid-gap: 10px; /* Add some spacing between the rows */
+            width: 100%; /* Ensure the main container spans the full width */
+        }
+        #list-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        #html-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .list-ele {
+            padding: 5px 10px;
+            margin: 5px 0;
+            background-color: #f0f0f0;
+        }
+        #navigator-container {
+            text-align: center; /* Center the content horizontally */
+        }
+    </style>
+    
+    
+</head>
+<body>
+<div id = "main-container">
+	<div id = "top-container">
+	    <div id = "list-container">
+		    <ul>
+			<li class="list-ele" id="list-ele1">level 1</li>
+			<li class="list-ele" id="list-ele2">level 2.1</li>
+			<li class="list-ele" id="list-ele3">level 2.2</li>
+			<li class="list-ele" id="list-ele4">level 4</li>
+			<li class="list-ele" id="list-ele5">level 5</li>
+            </ul>
+	    </div>
+        <div id = html-container>  
+        <iframe id="iframe-container" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+
+        </div>
+    </div>
+    <div id = "navigator-container">
+		<img src = "images/back.png" id = "back" alt = "back"></img>
+		<img src = "images/next.png" id = "next" alt = "next"></img>
+	</div>
+
+</div>
+</body>
+<script  src="/scripts/utils.js" type="text/javascript"></script>
+<script>
+    var cur_klicked = -1;
+    const listItems = Array.from(document.querySelectorAll('.list-ele'));
+    // Get references to the list elements and the HTML container
+    const listElements = document.querySelectorAll('.list-ele');
+    const htmlContainer = document.getElementById('html-container');
+    const back = document.getElementById("back");
+    const next = document.getElementById("next");
+
+    back.addEventListener("click",function(e){
+        if(cur_klicked>0){
+            listItems[cur_klicked-1].click();
+        }
+
+    },false);
+    next.addEventListener("click",function(e){
+        if(cur_klicked<listItems.length-1){
+            listItems[cur_klicked+1].click();
+        }
+
+    },false);
+
+    // Add click event listeners to each list element
+    listElements.forEach((element) => {
+        element.addEventListener('click', (event) => {
+            // Get the clicked list item's ID
+            const clickedItemId = event.target.id;
+            cur_klicked = listItems.indexOf(event.target);
+            send_state();
+
+            // You can define a mapping between list item IDs and HTML page URLs here
+            const pageMapping = {
+                'list-ele1': 'level1.html',
+                'list-ele2': 'level2.html',
+                'list-ele3': 'level2_2.html',
+                'list-ele4': 'level4.html',
+                'list-ele5': 'level5.html',
+            };
+
+            // Get the HTML page URL based on the clicked item's ID
+            const pageUrl = '/pages/'+pageMapping[clickedItemId];
+            const iframe = document.getElementById('iframe-container');
+            // Access the iframe's content document
+            const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+
+            // Load the HTML page into the HTML container
+            if (pageUrl) {
+                fetch(pageUrl)
+                .then((response) => response.text())
+                .then((html) => {
+                    
+                     // Clear the existing content by setting the iframe's content to an empty string
+                iframe.src = 'about:blank';
+
+                // Load the new HTML content into the iframe
+                iframe.srcdoc = html;
+                })
+                .catch((error) => {
+                    console.error('Error loading HTML page:', error);
+                });
+            }
+        });
+    });
+</script>
+
+
+
+
+</html>
